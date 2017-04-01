@@ -1,0 +1,110 @@
+\ProvidesPackage{iunits}
+\RequirePackage{amsmath}
+\newcommand
+	{\unit}[1]
+	{\ensuremath{\text{#1}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Приставки и базовые единицы СИ
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand   {\n}    {\unit{н}}
+\newcommand   {\mk}   {\unit{мк}}
+\newcommand   {\m}    {\unit{м}}
+\renewcommand {\k}    {\unit{к}}
+\newcommand   {\M}    {\unit{М}}
+\newcommand   {\G}    {\unit{Г}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand {\m}    {\unit{м}}
+\newcommand   {\kg}   {\unit{кг}}
+\newcommand   {\s}    {\unit{с}}
+\newcommand   {\A}    {\unit{А}}
+\newcommand   {\K}    {\unit{К}}
+\newcommand   {\mol}  {\unit{моль}}
+\newcommand   {\cd}   {\unit{кд}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Некоторые производные единицы
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Длина
+\newcommand   {\nm}   {\unit{нм}}
+\newcommand   {\mkm}  {\unit{мкм}}
+\newcommand   {\mm}   {\unit{мм}}
+\newcommand   {\cm}   {\unit{см}}
+\newcommand   {\dm}   {\unit{дм}}
+\newcommand   {\km}   {\unit{км}}
+%%%
+\newcommand   {\pc}   {\unit{пк}}
+\newcommand   {\kpc}  {\unit{кпк}}
+\newcommand   {\Mpc}  {\unit{Мпк}}
+\newcommand   {\Gpc}  {\unit{Гпк}}
+%%%
+\newcommand   {\Ao}   {\unit{\textup{\AA}}}
+\newcommand   {\au}   {\unit{а.\,е.}}
+
+%% Объём
+\renewcommand {\l}    {\unit{л}}
+\newcommand   {\ml}   {\unit{мл}}
+
+%% Масса
+\newcommand   {\mkg}  {\unit{мкг}}
+\newcommand   {\mg}   {\unit{мг}}
+\newcommand   {\g}    {\unit{г}}
+\newcommand   {\ton}  {\unit{т}}
+
+%% Время. Частота
+\newcommand   {\ns}   {\unit{нс}}
+\newcommand   {\mks}  {\unit{мкс}}
+\newcommand   {\ms}   {\unit{мс}}
+\newcommand   {\tmin} {\unit{мин}}
+\newcommand   {\thr}  {\unit{ч}}
+\newcommand   {\tday} {\unit{сут}}
+\newcommand   {\Hz}   {\unit{Гц}}
+\newcommand   {\rpm}  {\unit{об.}/\text{мин}}
+\newcommand   {\rps}  {\unit{об.}/\text{с}}
+
+%% Сила. Энергия
+\newcommand   {\N}    {\unit{Н}}
+\newcommand   {\Pa}   {\unit{Па}}
+\newcommand   {\J}    {\unit{Дж}}
+\newcommand   {\W}    {\unit{Вт}}
+%%%
+\renewcommand {\cal}  {\unit{кал}}
+\newcommand   {\erg}  {\unit{эрг}}
+\newcommand   {\eV}   {\unit{эВ}}
+%%%
+\newcommand   {\atm}  {\unit{атм}}
+\newcommand   {\hPa}  {\unit{гПа}}
+\newcommand   {\Torr} {\unit{торр}}
+
+%% Угловые меры
+\renewcommand {\o}    {\ensuremath{{}^\circ}}
+\newcommand   {\rad}  {\unit{рад}}
+\newcommand   {\sr}   {\unit{ср}}
+
+%% Электромагнетизм
+\newcommand   {\mA}   {\unit{мА}}
+\newcommand   {\mkA}  {\unit{мкА}}
+%%%
+\newcommand   {\V}    {\unit{В}}
+\newcommand   {\mV}   {\unit{мВ}}
+\newcommand   {\mkV}  {\unit{мкВ}}
+%%%
+\renewcommand {\C}    {\unit{Кл}}
+\newcommand   {\Ohm}  {\unit{Ом}}
+\newcommand   {\F}    {\unit{Ф}}
+\renewcommand {\H}    {\unit{Гн}}
+\newcommand   {\T}    {\unit{Тл}}
+\newcommand   {\Wb}   {\unit{Вб}}
+\newcommand   {\Oe}   {\unit{Э}}
+\newcommand   {\Gs}   {\unit{Гс}}
+\newcommand   {\Sm}   {\unit{См}}
+
+%% Разное
+\newcommand   {\CC}   {\ensuremath{{}^\circ\text{С}}}
+\newcommand   {\mps}  {\ensuremath{\text{м}/\text{с}}}
+\newcommand   {\kph}  {\ensuremath{\text{км}/\text{ч}}}
+\newcommand   {\rev}  {\ensuremath{\text{об.}}}
