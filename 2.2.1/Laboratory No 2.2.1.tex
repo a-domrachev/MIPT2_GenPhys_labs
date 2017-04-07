@@ -172,11 +172,11 @@ $$=180\cdot\sqrt{\Big(\dfrac{0.5}{360}\Big)^{2}+\Big(\dfrac{0.5}{360}\Big)^{2}+\
 2. Рассчитаем коэффициент наклона графика с помощью МНК:\\
 
 \begin{equation*}
-k = \dfrac{\langle x y \rangle}{\langle x^2 \rangle} = \dfrac{25.258}{7259.78} = 0.00347 \text{ ;}
+k = \frac{\langle xy \rangle - \langle x \rangle \langle y \rangle}{\langle x^2 \rangle - \langle x \rangle ^ 2} = 4.65 \cdot 10^{-3} \text{ ;}
 \end{equation*}
 
 
-$$  \sigma_{k} = \dfrac{1}{\sqrt{n}} \cdot \sqrt{\dfrac{\langle y^2 \rangle}{\langle x^2 \rangle}-k^2} = \dfrac{1}{\sqrt{24}}\cdot \sqrt{\dfrac{0.149}{7259.78}-0.00347^{\,2}} = 0.00059$$
+$$  \sigma_{k} = 0.03 \cdot 10^{-3}$$
 
 
 
@@ -187,7 +187,7 @@ $$  \sigma_{k} = \dfrac{1}{\sqrt{n}} \cdot \sqrt{\dfrac{\langle y^2 \rangle}{\la
 
 $$k = 1 / {\tau} = \dfrac{V_1 + V_2}{V_1 \cdot V_2} \cdot \dfrac{S\cdot D}{l}$$
 \begin{equation}
-D = k \cdot \dfrac{l}{S} \cdot \dfrac{V_1 \cdot V_2}{V_1 + V_2} = 0.00347 \cdot 7.0 \cdot \dfrac{360\cdot 360}{360+360} = 4.37  \text{ } \dfrac{\textup{см}^2}{\textup{с}}
+D = k \cdot \dfrac{l}{S} \cdot \dfrac{V_1 \cdot V_2}{V_1 + V_2} = 0.00465 \cdot 7.0 \cdot \dfrac{360\cdot 360}{360+360} = 5.86  \text{ } \dfrac{\textup{см}^2}{\textup{с}}
 \end{equation}
 
 \begin {figure}[H]
@@ -200,9 +200,9 @@ D = k \cdot \dfrac{l}{S} \cdot \dfrac{V_1 \cdot V_2}{V_1 + V_2} = 0.00347 \cdot 
 \sigma_{D} = D \cdot \sqrt{\Big(\dfrac{\sigma_{k}}{k}\Big)^{2} + 
 \Big(\dfrac{\sigma_{\nicefrac{l}{S}}}{\nicefrac{l}{S}}\Big)^{2}+\Big(\dfrac{\sigma_{V_\text{п}}}{V_\text{п}}\Big)^{2}} 
 \end{equation}
-$$\sigma_{D}= 4.37 \cdot \sqrt{\Big(\dfrac{0.00059}{0.00347}\Big)^{2} + \Big(\dfrac{0.5}{7.0}\Big)^{2} + \Big(\dfrac{0.396}{180}\Big)^{2}} = 0.80 \text{ } \dfrac{\textup{см}^2}{\textup{с}}$$
+$$\sigma_{D}= 5.86 \cdot \sqrt{\Big(\dfrac{0.00003}{0.00465}\Big)^{2} + \Big(\dfrac{0.5}{7.0}\Big)^{2} + \Big(\dfrac{0.396}{180}\Big)^{2}} = 0.42 \text{ } \dfrac{\textup{см}^2}{\textup{с}}$$
 %\end{equation}
-\Large  В итоге получим: $ D_1 = 4.37 \pm 0.80 \text{ }\dfrac{\textup{см}^2}{\textup{с}} $
+\Large  В итоге получим: $ D_1 = 5.86 \pm 0.42 \text{ }\dfrac{\textup{см}^2}{\textup{с}} $
 \normalsize
 \newpage
 
@@ -263,15 +263,20 @@ $$\sigma_{D}= 4.37 \cdot \sqrt{\Big(\dfrac{0.00059}{0.00347}\Big)^{2} + \Big(\df
 \end{table}
 
 2. Рассчитаем коэффициент наклона графика с помощью МНК:\\
-$$k = \dfrac{\langle x\cdot y \rangle}{\langle x^2 \rangle} = \dfrac{13.061}{7868.82} = 0.00165 \text{ ;}$$ 
 
-$$\sigma_{k} = \dfrac{1}{\sqrt{n}} \cdot \sqrt{\dfrac{\langle y^2 \rangle}{\langle x^2 \rangle}-k^2} = \dfrac{1}{\sqrt{24}}\cdot \sqrt{\dfrac{0.0217}{7868.82}-0.00165^2} = 0.00004 $$
+\begin{equation*}
+k = \frac{\langle xy \rangle - \langle x \rangle \langle y \rangle}{\langle x^2 \rangle - \langle x \rangle ^ 2} = 1.55 \cdot 10^{-3} \text{ ;}
+\end{equation*}
+
+
+$$  \sigma_{k} = 0.09 \cdot 10^{-3}$$
+
 
 3. Расчитаем коэффициент взаимной диффузии по формулам (1) и (2): 
 
-$$D = 0.00165 \cdot 7.0 \cdot \dfrac{360\cdot 360}{360+360} = 2.08  \text{ } \dfrac{\textup{см}^2}{\textup{с}}   \text{ ;}$$
-$$\sigma_D =  2.08 \cdot \sqrt{\Big(\dfrac{0.00004}{0.00165}\Big)^{2} + \Big(\dfrac{0.5}{7.0}\Big)^{2} + \Big(\dfrac{0.396}{180}\Big)^{2}} = 0.156 \text{ } \dfrac{\textup{см}^2}{\textup{с}}$$
-\Large  В итоге получим: $ D_1 = 2.08 \pm 0.16 \text{ } \dfrac{\textup{см}^2}{\textup{с}} $
+$$D = 0.00155 \cdot 7.0 \cdot \dfrac{360\cdot 360}{360+360} = 1.96  \text{ } \dfrac{\textup{см}^2}{\textup{с}}   \text{ ;}$$
+$$\sigma_D =  1.96 \cdot \sqrt{\Big(\dfrac{0.00009}{0.00155}\Big)^{2} + \Big(\dfrac{0.5}{7.0}\Big)^{2} + \Big(\dfrac{0.396}{180}\Big)^{2}} = 0.18 \text{ } \dfrac{\textup{см}^2}{\textup{с}}$$
+\Large  В итоге получим: $ D_1 = 1.96 \pm 0.18 \text{ } \dfrac{\textup{см}^2}{\textup{с}} $
 \normalsize
 \begin {figure}[H]
 \begin{center}
@@ -342,15 +347,19 @@ $$\sigma_D =  2.08 \cdot \sqrt{\Big(\dfrac{0.00004}{0.00165}\Big)^{2} + \Big(\df
 \end{table}
 
 2. Рассчитаем коэффициент наклона графика с помощью МНК:\\
-$$k = \dfrac{\langle x\cdot y \rangle}{\langle x^2 \rangle} = \dfrac{9.339}{6401.69} = 0.00145 \text{ ;}$$ 
 
-$$\sigma_{k} = \dfrac{1}{\sqrt{n}} \cdot \sqrt{\dfrac{\langle y^2 \rangle}{\langle x^2 \rangle}-k^2} = \dfrac{1}{\sqrt{22}}\cdot \sqrt{\dfrac{0.0137}{6401.69}-0.00145^2} = 0.00004\\$$
+\begin{equation*}
+k = \frac{\langle xy \rangle - \langle x \rangle \langle y \rangle}{\langle x^2 \rangle - \langle x \rangle ^ 2} = 1.36 \cdot 10^{-3} \text{ ;}
+\end{equation*}
+
+
+$$  \sigma_{k} = 0.01 \cdot 10^{-3}$$
 
 3. Расчитаем коэффициент взаимной диффузии по формулам (1) и (2): 
 
-$$D = 0.00145 \cdot 7.0 \cdot \dfrac{360\cdot 360}{360+360} = 1.83  \text{ } \dfrac{\textup{см}^2}{\textup{с}}   \text{ ;}$$
-$$\sigma_D =  1.83 \cdot \sqrt{\Big(\dfrac{0.00004}{0.00145}\Big)^{2} + \Big(\dfrac{0.5}{7.0}\Big)^{2} + \Big(\dfrac{0.396}{180}\Big)^{2}} = 0.14 \text{ } \dfrac{\textup{см}^2}{\textup{с}}$$
-\Large  В итоге получим: $ D_1 = 1.83 \pm 0.14 \text{ } \dfrac{\textup{см}^2}{\textup{с}} $
+$$D = 0.00136 \cdot 7.0 \cdot \dfrac{360\cdot 360}{360+360} = 1.72  \text{ } \dfrac{\textup{см}^2}{\textup{с}}   \text{ ;}$$
+$$\sigma_D =  1.72 \cdot \sqrt{\Big(\dfrac{0.00001}{0.00136}\Big)^{2} + \Big(\dfrac{0.5}{7.0}\Big)^{2} + \Big(\dfrac{0.396}{180}\Big)^{2}} = 0.12 \text{ } \dfrac{\textup{см}^2}{\textup{с}}$$
+\Large  В итоге получим: $ D_1 = 1.72 \pm 0.12 \text{ } \dfrac{\textup{см}^2}{\textup{с}} $
 \normalsize
 \begin {figure}[H]
 \begin{center}
@@ -423,15 +432,19 @@ $$\sigma_D =  1.83 \cdot \sqrt{\Big(\dfrac{0.00004}{0.00145}\Big)^{2} + \Big(\df
 \end{table}
 
 2. Рассчитаем коэффициент наклона графика с помощью МНК:\\
-$$k = \dfrac{\langle x\cdot y \rangle}{\langle x^2 \rangle} = \dfrac{50.050}{37990.86} = 0.00132 \text{ ;}$$ 
 
-$$\sigma_{k} = \dfrac{1}{\sqrt{n}} \cdot \sqrt{\dfrac{\langle y^2 \rangle}{\langle x^2 \rangle}-k^2} = \dfrac{1}{\sqrt{23}}\cdot \sqrt{\dfrac{0.0659}{37990.86}-0.00132^2} = 0.000005\\$$
+\begin{equation*}
+k = \frac{\langle xy \rangle - \langle x \rangle \langle y \rangle}{\langle x^2 \rangle - \langle x \rangle ^ 2} = 1.46 \cdot 10^{-3} \text{ ;}
+\end{equation*}
+
+
+$$  \sigma_{k} = 0.23 \cdot 10^{-3}$$
 
 3. Расчитаем коэффициент взаимной диффузии по формулам (1) и (2): 
 
-$$D = 0.00132 \cdot 7.0 \cdot \dfrac{360\cdot 360}{360+360} = 1.66 \text{ } \dfrac{\textup{см}^2}{\textup{с}}   \text{ ;}$$
-$$\sigma_D =  1.66 \cdot \sqrt{\Big(\dfrac{0.000005}{0.00132}\Big)^{2} + \Big(\dfrac{0.5}{7.0}\Big)^{2} + \Big(\dfrac{0.396}{180}\Big)^{2}} = 0.12 \text{ } \dfrac{\textup{см}^2}{\textup{с}}$$
-\Large  В итоге получим: $ D_1 = 1.66 \pm 0.12 \text{ } \dfrac{\textup{см}^2}{\textup{с}} $
+$$D = 0.00146 \cdot 7.0 \cdot \dfrac{360\cdot 360}{360+360} = 1.83 \text{ } \dfrac{\textup{см}^2}{\textup{с}}   \text{ ;}$$
+$$\sigma_D =  1.73 \cdot \sqrt{\Big(\dfrac{0.00023}{0.00183}\Big)^{2} + \Big(\dfrac{0.5}{7.0}\Big)^{2} + \Big(\dfrac{0.396}{180}\Big)^{2}} = 0.32 \text{ } \dfrac{\textup{см}^2}{\textup{с}}$$
+\Large  В итоге получим: $ D_1 = 1.83 \pm 0.32 \text{ } \dfrac{\textup{см}^2}{\textup{с}} $
 \normalsize
 \begin {figure}[H]
 \begin{center}
@@ -478,15 +491,18 @@ $$\sigma_D =  1.66 \cdot \sqrt{\Big(\dfrac{0.000005}{0.00132}\Big)^{2} + \Big(\d
 \end{table}
 
 2. Рассчитаем коэффициент наклона графика с помощью МНК:\\
-$$k = \dfrac{\langle x\cdot y \rangle}{\langle x^2 \rangle} = \dfrac{57.407}{59620.80} = 0.00096 \text{ ;}$$ 
 
-$$\sigma_{k} = \dfrac{1}{\sqrt{n}} \cdot \sqrt{\dfrac{\langle y^2 \rangle}{\langle x^2 \rangle}-k^2} = \dfrac{1}{\sqrt{21}}\cdot \sqrt{\dfrac{0.0554}{59620.80}-0.00096^2} = 0.000008\\$$
+\begin{equation*}
+k = \frac{\langle xy \rangle - \langle x \rangle \langle y \rangle}{\langle x^2 \rangle - \langle x \rangle ^ 2} = 1.10 \cdot 10^{-3} \text{ ;}
+\end{equation*}
+
+$$  \sigma_{k} = 0.12 \cdot 10^{-3}$$
 
 3. Расчитаем коэффициент взаимной диффузии по формулам (1) и (2):
 
-$$D = 0.00096 \cdot 7.0 \cdot \dfrac{360\cdot 360}{360+360} = 1.21 \text{ } \dfrac{\textup{см}^2}{\textup{с}}   \text{ ;}$$
-$$\sigma_D =  1.21 \cdot \sqrt{\Big(\dfrac{0.000008}{0.00096}\Big)^{2} + \Big(\dfrac{0.5}{7.0}\Big)^{2} + \Big(\dfrac{0.396}{180}\Big)^{2}} = 0.09 \text{ } \dfrac{\textup{см}^2}{\textup{с}}$$
-\Large  В итоге получим: $ D_1 = 1.21 \pm 0.09 \text{ } \dfrac{\textup{см}^2}{\textup{с}} $
+$$D = 0.00110 \cdot 7.0 \cdot \dfrac{360\cdot 360}{360+360} = 1.39 \text{ } \dfrac{\textup{см}^2}{\textup{с}}   \text{ ;}$$
+$$\sigma_D =  1.39 \cdot \sqrt{\Big(\dfrac{0.00012}{0.00110}\Big)^{2} + \Big(\dfrac{0.5}{7.0}\Big)^{2} + \Big(\dfrac{0.396}{180}\Big)^{2}} = 0.18 \text{ } \dfrac{\textup{см}^2}{\textup{с}}$$
+\Large  В итоге получим: $ D_1 = 1.39 \pm 0.18 \text{ } \dfrac{\textup{см}^2}{\textup{с}} $
 \normalsize
 
 \begin {figure}[H]
